@@ -7,11 +7,11 @@ import { MovieCreation, SearchOutlined } from '@material-ui/icons';
 import TvIcon from '@material-ui/icons/Tv';
 
 import { useNavigate  } from "react-router-dom"
-import { maxWidth } from '@mui/system';
+
 
 const useStyles = makeStyles({
   root: {
-    width: maxWidth,
+    width: "100%",
     position:"fixed",
     bottom:0,
     backgroundColor:"#2d313a",
@@ -42,7 +42,7 @@ export default function SimpleBottomNavigation() {
   return ( 
       
       <BottomNavigation
-      style={{width:"100%"}}
+      
       value={value}
       onChange={(event, newValue) => {
         setValue(newValue);
